@@ -9,6 +9,8 @@ use Illuminate\Auth\Authenticatable;
 class People extends Model implements AuthenticatableContract
 {
     use Authenticatable;
+
+    protected $connection= 'sqlsrv';
     protected $table = 'people';
     protected $fillable = ['id', 'name'];
     protected $primaryKey = 'id';

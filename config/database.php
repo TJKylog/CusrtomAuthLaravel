@@ -78,6 +78,16 @@ return [
             'schema' => 'public',
         ],
 
+        'sqlsrv' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_MS_HOST', 'localhost'),
+            'database' => env('DB_MS_DATABASE', 'forge'),
+            'username' => env('DB_MS_USERNAME', 'forge'),
+            'password' => env('DB_MS_PASSWORD', ''),
+            'charset' => 'utf8',
+            'prefix' => '',
+        ],
+
     ],
 
     /*

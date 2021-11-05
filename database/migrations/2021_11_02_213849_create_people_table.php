@@ -12,7 +12,7 @@ class CreatePeopleTable extends Migration
      */
     public function up()
     {
-        Schema::create('people', function (Blueprint $table) {
+        Schema::connection('sqlsrv')->create('people', function (Blueprint $table) {
             $table->integer('id');
             $table->string('name',250);
             $table->primary('id');
